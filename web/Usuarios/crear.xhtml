@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Crear usuario</title>
+    </h:head>
+    <h:body>
+        <f:view>
+
+
+    <h:form>
+        <h1><h:outputText value="Create/Edit"/></h1>
+        <h:panelGrid columns="2">
+            <h:outputLabel value="Nombres:" for="nombres" />
+            <h:inputText id="nombres" value="#{controllerUsuarios.usuarios.nombres}" title="Nombres" required="true" requiredMessage="The Nombres field is required."/>
+            <h:outputLabel value="Apellidos:" for="apellidos" />
+            <h:inputText id="apellidos" value="#{controllerUsuarios.usuarios.apellidos}" title="Apellidos" required="true" requiredMessage="The Apellidos field is required."/>
+            <h:outputLabel value="TipoIdentificacion:" for="tipoIdentificacion" />
+            <h:inputText id="tipoIdentificacion" value="#{controllerUsuarios.usuarios.tipoIdentificacion}" title="TipoIdentificacion" required="true" requiredMessage="The TipoIdentificacion field is required."/>
+            <h:outputLabel value="Identificacion:" for="identificacion" />
+            <h:inputText id="identificacion" value="#{controllerUsuarios.usuarios.identificacion}" title="Identificacion" required="true" requiredMessage="The Identificacion field is required."/>
+            <h:outputLabel value="Email:" for="email" />
+            <h:inputText id="email" value="#{controllerUsuarios.usuarios.email}" title="Email" required="true" requiredMessage="The Email field is required."/>
+            <h:outputLabel value="Contrasena:" for="contrasena" />
+            <h:inputText id="contrasena" value="#{controllerUsuarios.usuarios.contrasena}" title="Contrasena" required="true" requiredMessage="The Contrasena field is required."/>
+            <h:outputLabel value="Direccion:" for="direccion" />
+            <h:inputText id="direccion" value="#{controllerUsuarios.usuarios.direccion}" title="Direccion" />
+            <h:outputLabel value="Telefono:" for="telefono" />
+            <h:inputText id="telefono" value="#{controllerUsuarios.usuarios.telefono}" title="Telefono" required="true" requiredMessage="The Telefono field is required."/>
+            <h:outputLabel value="Barrio:" for="barrio" />
+            <h:inputText id="barrio" value="#{controllerUsuarios.usuarios.barrio}" title="Barrio" />
+            <h:outputLabel value="Sexo:" for="sexo" />
+            <h:inputText id="sexo" value="#{controllerUsuarios.usuarios.sexo}" title="Sexo" required="true" requiredMessage="The Sexo field is required."/>
+            <h:outputLabel value="TerminosCondiciones:" for="terminosCondiciones" />
+            <h:inputText id="terminosCondiciones" value="#{controllerUsuarios.usuarios.terminosCondiciones}" title="TerminosCondiciones" required="true" requiredMessage="The TerminosCondiciones field is required."/>
+            <h:outputLabel value="Estado:" for="estado" />
+            <h:inputText id="estado" value="#{controllerUsuarios.usuarios.estado}" title="Estado" required="true" requiredMessage="The Estado field is required."/>
+            <h:outputLabel value="FechaCreacion:" for="fechaCreacion" />
+            <h:inputText id="fechaCreacion" value="#{controllerUsuarios.usuarios.fechaCreacion}" title="FechaCreacion" required="true" requiredMessage="The FechaCreacion field is required.">
+                <f:convertDateTime pattern="MM/dd/yyyy" />
+            </h:inputText>
+            <h:outputLabel value="FechaModificacion:" for="fechaModificacion" />
+            <h:inputText id="fechaModificacion" value="#{controllerUsuarios.usuarios.fechaModificacion}" title="FechaModificacion" required="true" requiredMessage="The FechaModificacion field is required.">
+                <f:convertDateTime pattern="MM/dd/yyyy" />
+            </h:inputText>
+            <h:outputLabel value="CiudadId:" for="ciudadId" />
+            <h:selectOneMenu id="ciudadId" value="#{controllerUsuarios.usuarios.ciudadId}" title="CiudadId" required="true" requiredMessage="The CiudadId field is required.">
+                <!-- TODO: update below reference to list of available items-->
+                <f:selectItems value="#{controllerCiudades.consultarCiudades()}" var="ciudad" itemValue="#{ciudad.id}" itemLabel="#{ciudad.name}" />
+            </h:selectOneMenu>
+        </h:panelGrid>
+        <h:commandButton id="btnCrear" value="Registrar" action="#{controllerUsuarios.crearUsuario()}"></h:commandButton>
+
+    </h:form>
+</f:view>
+        
+    </h:body>
+</html>
+
+

@@ -1,0 +1,290 @@
+<section id="principal" class="container-fluid-offset">
+	
+	<!-- content -->
+
+	<main class="container-fluid-offset">
+
+			<!-- section 1 -->
+
+				<section id="bloque" class="fondogris">
+					<h1>Usuarios</h1>
+					<p>Estos son todos los usuarios activos en el sistema</p>
+				</section>
+
+			<!-- fin section 1 -->
+
+			<!-- section 2 -->
+
+				<section class="container-fluid sin_padding_side padding_top_down">
+
+					<div class="col-lg-2 col-xs-12 sidebar_list">
+
+						<div class="list-group">
+						  <a href="#" data-link="todos" class="list-group-item active">Todos los usuarios <span class="badge">13</span></a>
+						  <a href="#" data-link="administrador" class="list-group-item">Administradores <span class="badge">3</span></a>
+						  <a href="#" data-link="cliente" class="list-group-item">Clientes <span class="badge">6</span></a>
+						  <a href="#" data-link="operario" class="list-group-item">Operarios <span class="badge">4</span></a>
+						  <a href="#" data-link="inactivo" class="list-group-item">Inactivos <span class="badge">1</span></a>
+						</div>
+						
+					</div>
+
+					<div class="col-lg-10 col-xs-12 container_list">
+							
+							<div class="bx-table table-responsive">
+								<table class="table table-condensed">
+									<thead>
+										<tr>
+											<th><span class="input"><input class="check_all" type="checkbox" aria-label=""></span></th>
+											<th>ID</th>
+											<th>Nombre</th>
+											<th>E-mail</th>
+											<th>Rol</th>
+											<th>Fecha creación</th>
+											<th>Acciones</th>
+										</tr>
+									</thead>
+									<tr scope="row" id="row1" data-id="1" class="activo administrador">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>1</td>
+										<td>Steven Rodriguez Rodriguez</td>
+										<td><a class="email_link" href="mailto:#">srodriguez45@misena.edu.co</a></td>
+										<td>Administrador</td>
+										<td>04-08-2016</td>
+										<td>
+											<a href="profile.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" id="row2" data-id="2"  class="todos administrador">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>2</td>
+										<td>Miguel Angel Bermudez</td>
+										<td><a class="email_link" href="mailto:#">miguelabermudez@misena.edu.co</a></td>
+										<td>Administrador</td>
+										<td>04-08-2016</td>
+										<td>
+											<a href="profile.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" id="row3" data-id="3"  class="todos administrador">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>3</td>
+										<td>Hernando Ovalle</td>
+										<td><a class="email_link" href="mailto:#">hovalle@misena.edu.co</a></td>
+										<td>Administrador</td>
+										<td>04-08-2016</td>
+										<td>
+											<a href="profile.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" id="row4" data-id="4"  class="todos cliente">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>4</td>
+										<td>Laura Rodriguez Rico</td>
+										<td><a class="email_link" href="mailto:#">lrodriguez@hotmail.com</a></td>
+										<td>Cliente</td>
+										<td>04-08-2016</td>
+										<td>
+											<a href="profile.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>									
+									<tr scope="row" id="row5" data-id="5"  class="todos operario">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>5</td>
+										<td>Pedro Ochoa</td>
+										<td><a class="email_link" href="mailto:#">pochoa@misena.edu.co</a></td>
+										<td>Operario</td>
+										<td>04-08-2016</td>
+										<td>
+											<a href="editOperator.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" id="row6" data-id="6" class="todos activo operario">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>6</td>
+										<td>Zaida Patricia</td>
+										<td><a class="email_link" href="mailto:#">zpatriciao@misena.edu.co</a></td>
+										<td>Operario</td>
+										<td>04-08-2016</td>
+										<td>
+											<a href="editOperator.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" id="row7" data-id="7" class="todos activo operario">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>7</td>
+										<td>Angélica triana</td>
+										<td><a class="email_link" href="mailto:#">atriana@misena.edu.co</a></td>
+										<td>Operario</td>
+										<td>04-08-2016</td>
+										<td>
+											<a href="editOperator.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" id="row8" data-id="8" class="todos activo operario">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>8</td>
+										<td>Sandra Feo</td>
+										<td><a class="email_link" href="mailto:#">sfeo@misena.edu.co</a></td>
+										<td>Cliente</td>
+										<td>04-08-2016</td>
+										<td>
+											<a href="editOperator.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>									
+									<tr scope="row" id="row9" data-id="9" class="todos activo cliente">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>9</td>
+										<td>Nedid Pineda</td>
+										<td><a class="email_link" href="mailto:#">npineda@misena.edu.co</a></td>
+										<td>Cliente</td>
+										<td>04-08-2016</td>
+										<td>
+											<a href="profile.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" id="row10" data-id="10" class="todos activo cliente">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>10</td>
+										<td>Salomon arias</td>
+										<td><a class="email_link" href="mailto:#">sarias@misena.edu.co</a></td>
+										<td>Cliente</td>
+										<td>04-08-2016</td>
+										<td>
+											<a href="profile.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" id="row11" data-id="11" class="todos activo cliente">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>11</td>
+										<td>Yeyssi Medina</td>
+										<td><a class="email_link" href="mailto:#">ymedina@misena.edu.co</a></td>
+										<td>Cliente</td>
+										<td>04-08-2016</td>
+										<td>
+											<a href="profile.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" id="row12" data-id="12" class="todos activo cliente">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>12</td>
+										<td>Albeiro Ramos</td>
+										<td><a class="email_link" href="mailto:#">aramos@hotmail.com</a></td>
+										<td>Cliente</td>
+										<td>04-08-2016</td>
+										<td>
+											<a href="profile.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" id="row13" data-id="13" class="todos inactivo cliente">
+										<td><span class="input"><input type="checkbox" aria-label="..."></span></td>
+										<td>13</td>
+										<td>Verónica Suarez</td>
+										<td><a class="email_link" href="mailto:#">vsuarez@hotmail.com</a></td>
+										<td>Cliente</td>
+										<td>05-08-2016</td>
+										<td>
+											<a href="profile.html" class="btn btn-default btn-xs" aria-label="Left Align">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+								</table>
+
+							</div>
+
+					</div>
+						
+				</section>
+
+			<!-- fin section 2 -->	
+		
+	</main>
+
+	<!-- fin content -->
+
+
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Confirmar acción</h4>
+      </div>
+      <div class="modal-body">
+        <p>Esta a punto de eliminar un usuario, para continuar haga clic en <b>Eliminar usuario</b>, de lo contrario finalice con <b>cancelar</b></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary delete-button" data-dismiss="modal">Eliminar usuario</button>
+      </div>
+    </div>
+  </div>
+</div>

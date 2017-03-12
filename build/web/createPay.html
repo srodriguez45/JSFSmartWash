@@ -1,0 +1,126 @@
+
+<section id="principal">
+	
+	<!-- sidebar -->
+
+	<aside id="sidebar" class="fondogris col-md-4">
+		
+			<figure class="sidebaruser">
+				<div class="sidebaruser_icon user_icon opacidad2">
+					<a href="profile.html"><div class="sidebaruser_img" style="/*background-image:url(img/will.jpg);*/;"></div></a>
+				</div>
+				<figcaption><b>Autenticado como:</b><p>Administrador</p></figcaption>
+			</figure>
+
+			<div id="data">
+				<p><b>Nombre:</b> <span id="nombre">Steven Rodriguez</span></p>
+			</div>
+
+			<div id="data">
+				<p><b>Teléfono:</b> +571 314 281 62 06</p>
+			</div>
+
+			<div id="data">
+				<p><b>ubicación:</b> Bogotá - Colombia</p>
+			</div>
+
+			<div id="data">
+				<p><b>Email:</b> <a href="mailto:srodriguez45@misena.edu.co" class="color2h color1">srodriguez45@misena.edu.co</a></p>
+			</div>
+
+			<div id="data">
+				<a href="profile.html" id="button" class="fondo2 fondoh1 cblanco">Editar perfil</a>
+			</div>
+
+	</aside>
+
+	<!-- fin sidebar -->
+
+	<!-- content -->
+
+	<main id="content">
+
+			<!-- section 1 -->
+
+				<section id="bloque" class="fondogris">
+					<h1>Generar pago</h1>
+					<p>Desde aqui podrás agregar un nuevo pago.</p>
+				</section>
+
+			<!-- fin section 1 -->
+
+			<!-- fin section 3 -->	
+
+			<section id="bloques">
+					
+					<section id="semibloque">
+						<h2 id="title">Datos generales</h2>
+
+						<form class="formulario" action="index.html" novalidate="novalidate" data-text="un pago">
+								<div class="icon_form">
+									<label class="color1" for="referencia" title="referencia">Referencia<span class="cred"> *</span></label>
+									<select name="referencia" class="input" required="required">
+										<option>Seleccione la referencia que causará el pago</option>
+										<option value="1">LC131231</option>
+										<option value="2">LM324532</option>
+										<option value="3">LT123125</option>
+										<option value="3">LB131231</option>
+										<option value="3">LO531231</option>
+									</select>
+								</div>
+
+								<div class="icon_form">
+									<label class="color1" for="estado" title="estado">Estado<span class="cred"> *</span></label>
+									<select name="estado" class="input" required="required">
+										<option value="Pendiente">Pendiente</option>
+										<option value="Pagado">Pagado</option>
+									</select>
+								</div>
+								
+								<div class="icon_form">
+									<label class="color1" for="valor" title="valor">Valor<span class="cred"> *</span></label>
+									<input id="valor" type="number" name="valor" class="input" placeholder="Valor de la comisión en pesos COP" required="required" autocomplete="off" value="25000" disabled="disabled">
+								</div>
+
+								<div class="icon_form">
+									<label class="color1" for="comision" title="comision">Comisión<span class="cred"> *</span></label>
+									<input id="comision" type="number" name="comision" class="input" placeholder="Valor de la comisión en pesos COP" required="required" autocomplete="off" value="12" disabled="disabled">
+								</div>
+
+								
+								<div class="icon_form button">
+									<input type="submit" class="btn fondo2 cblanco fondoh1" value="Causar pago">
+								</div>
+
+						</form>
+
+
+					</section>	
+
+					<section id="minibloque" class="minibloque_especial">
+						
+						<h2 id="title">Datos del vehículo</h2>
+
+						<div class="icon_form">
+							<label class="color1" for="vehiculo" title="vehiculo">Vehículo que tomó el servicio<span class="cred"> *</span></label>
+							<input id="vehiculo" type="text" name="vehiculo" class="input" placeholder="Valor de la comisión en pesos COP" required="required" autocomplete="off" value="Yamaha YSA62D" disabled="disabled">
+						</div>
+
+						<div class="icon_form">
+							<label class="color1" for="propietario" title="propietario">Propietario<span class="cred"> *</span></label>
+							<input id="propietario" type="text" name="propietario" class="input" placeholder="Valor de la comisión en pesos COP" required="required" autocomplete="off" value="Laura Rodriguez" disabled="disabled">
+						</div>
+
+					</section>
+
+
+			</section>	
+
+			<!-- fin section 3 -->	
+
+		
+	</main>
+
+	<!-- fin content -->
+
+</section>

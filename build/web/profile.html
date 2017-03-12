@@ -1,0 +1,166 @@
+<section id="principal">
+	
+	<!-- sidebar -->
+
+	<aside id="sidebar" class="fondogris col-md-4">
+		
+			<figure class="sidebaruser">
+				<div class="sidebaruser_icon user_icon opacidad2">
+					<a href="profile.html"><div class="sidebaruser_img" style="/*background-image:url(img/will.jpg);*/;"></div></a>
+				</div>
+				<figcaption><b>Autenticado como:</b><p>Administrador</p></figcaption>
+			</figure>
+
+			<div id="data">
+				<p><b>Nombre:</b> <span id="nombre">Steven Rodriguez</span></p>
+			</div>
+
+			<div id="data">
+				<p><b>Teléfono:</b> <span id="telefono">+571 314 281 62 06</span></p>
+			</div>
+
+			<div id="data">
+				<p><b>ubicación:</b> <span id="ciudad">Bogotá</span> - <span id="pais">Colombia</span></p>
+			</div>
+
+			<div id="data">
+				<p><b>Email:</b> <a href="mailto:srodriguez45@misena.edu.co" id="correo" class="color2h color1">srodriguez45@misena.edu.co</a></p>
+			</div>
+
+			<div id="data">
+				<a href="profile.html" id="button" class="fondo2 fondoh1 cblanco">Editar perfil</a>
+			</div>
+
+	</aside>
+
+	<!-- fin sidebar -->
+
+	<!-- content -->
+
+	<main id="content">
+
+			<!-- section 1 -->
+
+				<section id="bloque" class="fondogris">
+					<h1>Perfil</h1>
+					<p>Desde aqui podrias editar tus datos personales</p>
+				</section>
+
+			<!-- fin section 1 -->
+
+			<!-- fin section 3 -->	
+
+			<section id="bloques">
+					
+					<section id="semibloque">
+						<h2 id="title">Datos generales</h2>
+
+						<form id="createForm" class="formulario" action="index.html" novalidate="novalidate">
+								<div class="icon_form">
+									<label class="color1" for="nombres" title="Nombres">Nombres<span class="cred"> *</span></label>
+									<input id="nombres" type="text" name="nombres" class="input" placeholder="Nombres" required="required">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="apellidos" title="Apellidos">Apellidos<span class="cred"> *</span></label>
+									<input id="apellidos" type="text" name="apellidos" class="input" placeholder="Apellidos" required="required" autocomplete="off">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="tipo_documento" title="tipo_documento">Tipo de documento <span class="cred">*</span></label>
+									<select id="tipo_documento" name="tipo_documento" class="input" required="required">
+										<option value="cc">Cédula de cudadania</option>
+										<option value="ce">Cédula extranjería</option>
+										<option value="ti">Tarjeta de identidad</option>
+										<option value="rc">Registro civil</option>
+										<option value="nt">NIT</option>
+									</select>
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="identificacion" title="Identificacion">Identificación<span class="cred"> *</span></label>
+									<input id="identificacion" type="text" name="identificacion" class="input" placeholder="Identificacion" required="required" autocomplete="off">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="correo" title="correo">Correo electrónico<span class="cred"> *</span></label>
+									<input id="correo" type="email" name="correo" class="input" placeholder="Correo electrónico" required="required">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="telefono" title="telefono">Teléfono / Celular<span class="cred"> *</span></label>
+									<input id="telefono" type="tel" name="telefono" class="input" placeholder="telefono" required="required">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="rol" title="rol">Rol <span class="cred">*</span></label>
+									<select name="rol" class="input" required="required">
+										<option value="1">Administrador</option>
+										<option value="2">Operario</option>
+										<option value="3">Cliente</option>
+									</select>
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="direccion" title="direccion">Dirección</label>
+									<input id="direccion" type="text" name="direccion" class="input" placeholder="direccion electrónico" required="required">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="ciudad" title="ciudad">Ciudad</label>
+									<select name="ciudad" class="input" required="required">
+										<option>Seleccione la Ciudad</option>
+										<option value="Bogotá DC">Bogota DC</option>
+										<option value="Medellin">Medellin</option>
+										<option value="Cali">Cali</option>
+										<option value="Cartagena">Cartagena</option>
+										<option value="Bucaramanga">Bucaramanga</option>
+									</select>
+									<!-- <input id="ciudad" type="text" name="ciudad" class="input" placeholder="ciudad" required="required"> -->
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="pais" title="pais">País</label>
+									<select name="pais" class="input" required="required">
+										<option>Seleccione un País</option>
+										<option value="Colombia">Colombia</option>
+										<option value="Venezuela">Venezuela</option>
+										<option value="Peru">Peru</option>
+										<option value="Ecuador">Ecuador</option>
+										<option value="Argentina">Argentina</option>
+									</select>
+									<!-- <input id="pais" type="text" name="pais" class="input" placeholder="pais electrónico" required="required"> -->
+								</div>
+								<div class="icon_form button">
+									<input type="submit" class="btn fondo2 cblanco fondoh1" value="Guardar">
+								</div>
+
+						</form>
+
+
+					</section>	
+
+					<section id="minibloque" class="minibloque_especial">
+						<h2 id="title">Generar Contraseña</h2>
+
+
+						<form id="formpass" class="formulario" action="index.html">
+								<div class="icon_form">
+									<label class="color1" for="pass" title="Contraseña Nueva">Contraseña<span class="cred"> *</span></label>
+									<input id="pass" type="password" name="passnew" class="input" placeholder="Digite una Nueva contraseña segura" required="required">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="pass" title="Confirme Contraseña">Confirme Contraseña<span class="cred"> *</span></label>
+									<input id="pass" type="password" name="passconfirmation" class="input" placeholder="Confirme la contraseña" required="required">
+								</div>
+								<div class="icon_form button">
+									<input type="submit" class="btn fondo2 cblanco fondoh1" value="Actualizar Contraseña">
+								</div>	
+						</form>
+
+						<section class="fondogris">
+							
+						</section>
+					</section>	
+
+			</section>	
+
+			<!-- fin section 3 -->		
+
+		
+	</main>
+
+	<!-- fin content -->
+
+</section>

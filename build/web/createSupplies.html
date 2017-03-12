@@ -1,0 +1,143 @@
+<section id="principal">
+	
+	<!-- sidebar -->
+
+	<aside id="sidebar" class="fondogris col-md-4">
+		
+			<figure class="sidebaruser">
+				<div class="sidebaruser_icon user_icon opacidad2">
+					<a href="profile.html"><div class="sidebaruser_img" style="/*background-image:url(img/will.jpg);*/;"></div></a>
+				</div>
+				<figcaption><b>Autenticado como:</b><p>Administrador</p></figcaption>
+			</figure>
+
+			<div id="data">
+				<p><b>Nombre:</b> <span id="nombre">Steven Rodriguez</span></p>
+			</div>
+
+			<div id="data">
+				<p><b>Teléfono:</b> +571 314 281 62 06</p>
+			</div>
+
+			<div id="data">
+				<p><b>ubicación:</b> Bogotá - Colombia</p>
+			</div>
+
+			<div id="data">
+				<p><b>Email:</b> <a href="mailto:srodriguez45@misena.edu.co" class="color2h color1">srodriguez45@misena.edu.co</a></p>
+			</div>
+
+			<div id="data">
+				<a href="profile.html" id="button" class="fondo2 fondoh1 cblanco">Editar perfil</a>
+			</div>
+
+	</aside>
+
+	<!-- fin sidebar -->
+
+	<!-- content -->
+
+	<main id="content">
+
+			<!-- section 1 -->
+
+				<section id="bloque" class="fondogris">
+					<h1>Nuevo insumo</h1>
+					<p>Desde aqui podrás agregar un nuevo insumo</p>
+				</section>
+
+			<!-- fin section 1 -->
+
+			<!-- fin section 3 -->	
+
+			<section id="bloques">
+					
+					<section id="semibloque">
+						<h2 id="title">Datos generales</h2>
+
+						<form class="formulario" action="index.html">
+								<div class="icon_form">
+									<label class="color1" for="Nombre" title="Nombre">Nombre del insumo<span class="cred"> *</span></label>
+									<input id="nombre1" type="text" name="nombre" class="input" placeholder="Nombre del insumo" required="required" autocomplete="off">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="asignacion" title="asignacion">Tipo de asignación <span class="cred">*</span></label>
+									<select name="asignacion" class="input" required="required">
+										<option>Seleccione una opción</option>
+										<option value="Pago">Insumo descontable</option>
+										<option value="Gratis">Insumo gratuito</option>
+									</select>
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="valor" title="valor">Valor del insumo<span class="cred"> *</span></label>
+									<input id="valor" type="number" name="valor" class="input" placeholder="Valor en COP" required="required" autocomplete="off">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="ref" title="referencia">Referencia<span class="cred"> *</span></label>
+									<input id="correo" type="text" name="ref" class="input" placeholder="Referencia del insumo" required="required">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="cantidad" title="cantidad">Cantidades disponibles<span class="cred"> *</span></label>
+									<input id="cantidad" type="number" name="cantidad" class="input" placeholder="Agrega la cantidad disponible" required="required" autocomplete="off">
+								</div>
+								
+								<div class="icon_form">
+									<label class="color1" for="ciudad" title="ciudad">Rol <span class="cred">*</span></label>
+									<select name="ciudad" class="input" required="required">
+										<option>Seleccione el rol</option>
+										<option value="1">Administrador</option>
+										<option value="2">Operario</option>
+										<option value="3">Cliente</option>
+									</select>
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="direccion" title="direccion">Dirección</label>
+									<input id="direccion" type="text" name="direccion" class="input" placeholder="direccion electrónico" required="required">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="ciudad" title="ciudad">Ciudad <span class="cred">*</span></label>
+									<select name="ciudad" class="input" required="required">
+										<option>Seleccione la Ciudad</option>
+										<option value="Bogotá DC">Bogota DC</option>
+										<option value="Medellin">Medellin</option>
+										<option value="Cali">Cali</option>
+										<option value="Cartagena">Cartagena</option>
+										<option value="Bucaramanga">Bucaramanga</option>
+									</select>
+									<!-- <input id="ciudad" type="text" name="ciudad" class="input" placeholder="ciudad" required="required"> -->
+								</div>
+
+								<div class="icon_form">
+									<label class="color1" for="pais" title="pais">País <span class="cred">*</span></label>
+									<select name="pais" class="input" required="required">
+										<option>Seleccione un País</option>
+										<option value="Colombia">Colombia</option>
+										<option value="Venezuela">Venezuela</option>
+										<option value="Peru">Peru</option>
+										<option value="Ecuador">Ecuador</option>
+										<option value="Argentina">Argentina</option>
+									</select>
+									<!-- <input id="pais" type="text" name="pais" class="input" placeholder="pais electrónico" required="required"> -->
+								</div>
+
+								<div class="icon_form button">
+									<input type="submit" class="btn fondo2 cblanco fondoh1" value="Guardar">
+								</div>
+
+						</form>
+
+
+					</section>	
+
+					
+
+			</section>	
+
+			<!-- fin section 3 -->	
+
+		
+	</main>
+
+	<!-- fin content -->
+
+</section>

@@ -1,3 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Home - SW</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+        <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/formularios.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/responsive.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="resources/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon.png">
+
+        <meta name="name" content="content">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <script>
+	if (typeof localStorage.userLoged == 'undefined') {
+		location.href= 'login.xhtml';
+	}
+</script>
+    <header id="header" class="fondogris">
+    <figure class="logo">
+	<a href="index.xhtml"><img src="resources/img/logo.png" alt="Smart Wash Logo" class="logo_img"/></a>
+    </figure>
+        <div class="top_bar">
+
+            <div class="exit_div">
+                    | <a href="login.xhtml" class="salir color2h"><i class="fa fa-sign-out exit"></i></a>
+            </div>
+
+            <figure class="userinfo">
+                    <a href="profile.xhtml" class="color2h">
+                            <div class="userinfo_img user_icon opacidad2" style="background-image:url(resources/img/gerente.jpg);"></div>
+                            <figcaption>Administrador</figcaption>
+                    </a>
+            </figure>
+		</div>
+
+		<nav id="principal_menu" class="fondo1 border2">
+		<li class="responsive_hide"><a href="#" class="navToggle cblanco"><i class="fa fa-bars"></i></a></li>
+
+			<ul>
+				<li><a href="#" class="fondo1 fondoh2 cblanco" title="Usuarios">Usuarios</a>
+					<ul class="submenu fondo1">
+						<h2 class="cblanco">Usuarios</h2>
+						<li><a href="listUsers.html" class="fondo1 fondoh2 cblanco" title="Todos los usuarios">Todos los usuarios</a></li>
+						<li><a href="customers.html" class="fondo1 fondoh2 cblanco" title="Todas los clientes">Todos los clientes</a></li>
+						<li><a href="listVehicles.html" class="fondo1 fondoh2 cblanco" title="Crear cita">Todos los vehículos</a></li>
+						<li><a href="createUser.html" class="fondo1 fondoh2 cblanco" title="Crear usuario">Crear usuario</a></li>
+						<li><a href="createVehicle.html" class="fondo1 fondoh2 cblanco" title="Crear cita">Crear vehículo</a></li>
+						<li><a href="profile.html" class="fondo1 fondoh2 cblanco" title="Tu perfil">Tu perfil</a></li>
+					</ul>
+				</li>				
+				<li><a href="#" class="fondo1 fondoh2 cblanco" title="Gestor de citas">Gestor de citas</a>
+					<ul class="submenu fondo1">
+						<h2 class="cblanco">Gestor de citas</h2>
+						<li><a href="listAppoinments.html" class="fondo1 fondoh2 cblanco" title="Todas las citas">Todas las citas</a></li>
+						<li><a href="createAppoinment.html" class="fondo1 fondoh2 cblanco" title="Crear cita">Crear cita</a></li>
+					</ul>
+				</li>
+				<li><a href="listServices.html" class="fondo1 fondoh2 cblanco" title="Insumos">Servicios</a></li>				
+				<li><a href="#" class="fondo1 fondoh2 cblanco" title="Insumos">Insumos</a>
+					<ul class="submenu fondo1">
+						<h2 class="cblanco">Gestor de insumos</h2>
+						<li><a href="listSupplieses.html" class="fondo1 fondoh2 cblanco" title="Todas las citas">Todas los insumos</a></li>
+						<li><a href="createSupplies.html" class="fondo1 fondoh2 cblanco" title="Crear cita">Crear insumo</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="fondo1 fondoh2 cblanco" title="Reportes">Pagos</a>
+					<ul class="submenu fondo1">
+						<h2 class="cblanco">Pagos</h2>
+						<li><a href="listPays.html" class="fondo1 fondoh2 cblanco" title="Todas las citas">Todos los pagos</a></li>
+						<li><a href="createPay.html" class="fondo1 fondoh2 cblanco" title="Crear cita">Adicionar pago</a></li>
+					</ul>
+				</li>
+				<li><a href="error404.html" class="fondo1 fondoh2 cblanco" title="Opciones generales">Reportes</a></li>				
+				<li><a href="#" class="fondo1 fondoh2 cblanco" title="Gestor de archivos">Gestor de archivos ADSI</a>
+					<ul class="submenu fondo1">
+						<h2 class="cblanco">Descargas / Errores</h2>
+						<li><a href="files.html" class="fondo1 fondoh2 cblanco" title="documentos">Listado maestro de documentos</a></li>
+						<li><a href="documents/comunicacion.zip" class="fondo1 fondoh2 cblanco" target="_blank" title="documentos">Componente de comunicación</a></li>
+						<li><a href="documents/plantilla.pdf" class="fondo1 fondoh2 cblanco" target="_blank" title="documentos">Ingeniería de software</a></li>
+						<li><a href="documents/imagenCorporativa.pdf" class="fondo1 fondoh2 cblanco" target="_blank" title="documentos">Diseño web</a></li>
+						<li><a href="documents/useCase.png" class="fondo1 fondoh2 cblanco" target="_blank" title="documentos">Inglés</a></li>
+						<li><a href="documents/SmartWashJava.rar" class="fondo1 fondoh2 cblanco" target="_blank" title="documentos">Algortimos</a></li>
+						<li><a href="documents/emprendimiento.rar" class="fondo1 fondoh2 cblanco" target="_blank" title="documentos">Emprendimiento</a></li>
+						<li><a href="error404.html" class="fondo1 fondoh2 cblanco" title="Errores">Error 404</a></li>
+						<li><a href="error500.html" class="fondo1 fondoh2 cblanco" title="Errores">Error 500</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</nav>
+
+</header>
 <div class="mensajero"></div>
 
 <section id="principal">
@@ -8,7 +106,7 @@
 		
 			<figure class="sidebaruser">
 				<div class="sidebaruser_icon user_icon opacidad2">
-					<a href="profile.html"><div class="sidebaruser_img" style="/*background-image:url(img/will.jpg);*/;"></div></a>
+					<a href="profile.html"><div class="sidebaruser_img" style="background-image:url(resources/img/gerente.jpg);"></div></a>
 				</div>
 				<figcaption><b>Autenticado como:</b><p>Administrador</p></figcaption>
 			</figure>

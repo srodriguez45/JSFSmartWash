@@ -1,7 +1,7 @@
 element.style {
 }
 
-input:not([type]) input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+input:not([type]) input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
     padding: 1px 0px;
 }
 

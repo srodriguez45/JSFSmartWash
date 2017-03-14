@@ -1,1 +1,8 @@
 /dist/
+<<<<<<< .merge_file_a09272
+/build/
+*.tmp
+=======
+/nbproject/private/
+/build/
+>>>>>>> .merge_file_a06744

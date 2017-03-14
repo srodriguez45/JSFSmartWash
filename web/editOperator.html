@@ -1,0 +1,254 @@
+
+<section id="principal">
+	
+	<!-- sidebar -->
+
+	<aside id="sidebar" class="fondogris col-md-4">
+		
+			<figure class="sidebaruser">
+				<div class="sidebaruser_icon user_icon opacidad2">
+					<a href="profile.html"><div class="sidebaruser_img" style="/*background-image:url(img/will.jpg);*/;"></div></a>
+				</div>
+				<figcaption><b>Autenticado como:</b><p>Administrador</p></figcaption>
+			</figure>
+
+			<div id="data">
+				<p><b>Nombre:</b> <span id="nombre">Steven Rodriguez</span></p>
+			</div>
+
+			<div id="data">
+				<p><b>Teléfono:</b> <span id="telefono">+571 314 281 62 06</span></p>
+			</div>
+
+			<div id="data">
+				<p><b>ubicación:</b> <span id="ciudad">Bogotá</span> - <span id="pais">Colombia</span></p>
+			</div>
+
+			<div id="data">
+				<p><b>Email:</b> <a href="mailto:srodriguez45@misena.edu.co" id="correo" class="color2h color1">srodriguez45@misena.edu.co</a></p>
+			</div>
+
+			<div id="data">
+				<a href="#" id="button" class="fondo2 fondoh1 cblanco"  data-toggle="modal" data-target="#solicitarInsumos">Asignar insumos a este operario</a>
+			</div>
+
+	</aside>
+
+	<!-- fin sidebar -->
+
+	<!-- content -->
+
+	<main id="content">
+
+			<!-- section 1 -->
+
+				<section id="bloque" class="fondogris">
+					<h1>Perfil del operario</h1>
+					<p>Desde aqui podrias editar datos personales del operario y asignarle insumos.</p>
+				</section>
+
+			<!-- fin section 1 -->
+
+			<!-- fin section 3 -->	
+
+			<section id="bloques">
+					
+					<section id="semibloque">
+						<h2 id="title">Datos generales</h2>
+
+						<form class="formulario" action="index.html">
+								<div class="icon_form">
+									<label class="color1" for="Nombre" title="Nombre">Nombre completo<span class="cred"> *</span></label>
+									<input id="nombre_operario" type="text" name="nombre" class="input" placeholder="Nombre" required="required">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="tipo_documento" title="tipo_documento">Tipo de documento <span class="cred">*</span></label>
+									<select id="tipo_documento" name="document_type" class="input" required="required">
+										<option>Tipo de documento</option>
+										<option value="cc">Cédula de cudadania</option>
+										<option value="ce">Cédula extranjería</option>
+										<option value="ti">Tarjeta de identidad</option>
+										<option value="rc">Registro civil</option>
+										<option value="nt">NIT</option>
+									</select>
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="Identificacion" title="Identificacion">Identificación<span class="cred"> *</span></label>
+									<input id="Identificacion" type="text" name="identificacion" class="input" placeholder="Identificacion" required="required" autocomplete="off">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="correo" title="correo">Correo electrónico<span class="cred"> *</span></label>
+									<input id="correo_operario" type="email" name="correo" class="input" placeholder="Correo electrónico" required="required">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="telefono" title="telefono">Teléfono / Celular<span class="cred"> *</span></label>
+									<input id="telefono_operario" type="tel" name="telefono" class="input" placeholder="telefono" required="required">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="direccion" title="direccion">Dirección</label>
+									<input id="direccion_operario" type="text" name="direccion" class="input" placeholder="direccion electrónico" required="required">
+								</div>
+
+								<div class="icon_form">
+									<label class="color1" for="ciudad" title="ciudad">Ciudad <span class="cred">*</span></label>
+									<select name="ciudad" class="input" required="required">
+										<option>Seleccione la Ciudad</option>
+										<option value="Bogotá DC">Bogota DC</option>
+										<option value="Medellin">Medellin</option>
+										<option value="Cali">Cali</option>
+										<option value="Cartagena">Cartagena</option>
+										<option value="Bucaramanga">Bucaramanga</option>
+									</select>
+									<!-- <input id="ciudad" type="text" name="ciudad" class="input" placeholder="ciudad" required="required"> -->
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="pais" title="pais">País</label>
+									<select name="pais" class="input">
+										<option>Seleccione un País</option>
+										<option value="Colombia">Colombia</option>
+										<option value="Venezuela">Venezuela</option>
+										<option value="Peru">Peru</option>
+										<option value="Ecuador">Ecuador</option>
+										<option value="Argentina">Argentina</option>
+									</select>
+									<!-- <input id="pais" type="text" name="pais" class="input" placeholder="pais electrónico" required="required"> -->
+								</div>
+
+								<div class="icon_form button">
+									<input type="submit" class="btn fondo2 cblanco fondoh1" value="Guardar">
+								</div>
+
+						</form>
+
+
+					</section>	
+
+					<section id="minibloque" class="minibloque_especial">
+						<h2 id="title">Cambio de Contraseña</h2>
+
+
+						<form id="formpass" class="formulario" action="index.html">
+								<div class="icon_form">
+									<label class="color1" for="pass" title="Contraseña Nueva">Contraseña Nueva<span class="cred"> *</span></label>
+									<input id="pass" type="password" name="passnew" class="input" placeholder="Digite una Nueva contraseña segura" required="required">
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="pass" title="Confirme Contraseña">Confirme Contraseña<span class="cred"> *</span></label>
+									<input id="pass" type="password" name="passconfirmation" class="input" placeholder="Confirme la contraseña" required="required">
+								</div>
+								<div class="icon_form button">
+									<input type="submit" class="btn fondo2 cblanco fondoh1" value="Actualizar Contraseña">
+								</div>	
+						</form>
+
+						<h2 id="title">Roles disponibles</h2>
+
+
+							<form id="formpass" class="formulario" action="index.html">
+									<div class="icon_form">
+									<label class="color1" for="tipo_documento" title="tipo_documento">Rol <span class="cred">*</span></label>
+									<select id="tipo_documento" name="document_type" class="input" required="required">
+										<option>Seleccione el rol</option>
+										<option value="1">Administrador</option>
+										<option value="2" selected="selected">Operario</option>
+										<option value="3">Cliente</option>
+									</select>
+								</div>
+							</form>
+
+				</section>	
+
+			</section>	
+
+			<!-- fin section 3 -->	
+
+		
+	</main>
+
+	<!-- fin content -->
+
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="solicitarInsumos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Asignar insumos a este operario</h4>
+      </div>
+      <div class="modal-body">
+        
+        <table class="table table-condensed">
+									<thead>
+										<tr>
+											<th><span class="input"><input class="check_all" type="checkbox" aria-label=""></span></th>
+											<th>ID</th>
+											<th>Insumo</th>
+											<th>Valor insomo</th>
+											<th>Tipo de asignación</th>
+											<th>Acciones</th>
+										</tr>
+									</thead>
+									<tr scope="row" class="activo cobrado" id="row1" data-id="1">
+										<td><span class="input"><input type="checkbox" aria-label=""></span></td>
+										<td>1</td>
+										<td>Llantín</td>
+										<td>$12.000</td>
+										<td class="tipo"><a class="motocicleta" href="#">Cobro</a></td>
+										<td>
+											<a href="#" class="btn btn-default btn-xs" aria-label="Left Align" data-name="Laura Rodriguez Rico" data-email="lrodriguez@hotmail.com" data-rol="3" aria-hidden="true">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" class="activo cobrado" id="row2" data-id="2">
+										<td><span class="input"><input type="checkbox" aria-label=""></span></td>
+										<td>2</td>
+										<td>Grasa</td>
+										<td>$22.000</td>
+										<td class="tipo"><a class="motocicleta" href="#">Cobro</a></td>
+										<td>
+											<a href="#" class="btn btn-default btn-xs" aria-label="Left Align" data-name="Laura Rodriguez Rico" data-email="lrodriguez@hotmail.com" data-rol="3" aria-hidden="true">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" class="activo gratuito" id="row3" data-id="3">
+										<td><span class="input"><input type="checkbox" aria-label=""></span></td>
+										<td>3</td>
+										<td>Brochas</td>
+										<td>$0</td>
+										<td class="tipo"><a class="motocicleta" href="#">Facilitado</a></td>
+										<td>
+											<a href="#" class="btn btn-default btn-xs" aria-label="Left Align" data-name="Laura Rodriguez Rico" data-email="lrodriguez@hotmail.com" data-rol="3" aria-hidden="true">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									
+								</table>
+
+								<p><b class="color1">Fecha de asignación:</b> 25/09/2016</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary delete-button" data-dismiss="modal">Asignar insumos</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

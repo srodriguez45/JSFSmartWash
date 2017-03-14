@@ -1,0 +1,186 @@
+
+<section id="principal">
+	<main id="contentFull">
+		<!-- section 1 -->
+		<section id="bloque" class="fondogris contentFull">
+			<h1>Solicitar Suministros</h1>
+			<p>Desde aqui podrás solictar suministros</p>
+		</section>
+		<section id="minibloqueUser" class="minibloque_especial margin-Resq-Oper">
+			<h2 id="title">Datos del Operador</h2>
+			<form id="formpass" class="formulario" action="index.xhtml">
+				<div class="icon_form">
+					<label class="color1" for="ciudad" title="ciudad">Nombre del Operador <span class="cred">*</span></label>
+					<label><span id="nombre">Carlos Santana</span></p></label>
+				</div>			
+			</form>	
+		</section>	
+	<!-- incio div tabla -->
+			<div class="col-lg-10 col-xs-12 container-list-70 margin-Resq-Oper">	
+				<div class="bx-table table-responsive">
+				<form >
+					<table id="myTable" class="table table-condensed">
+					<!-- Cabecara de la tabla -->
+						<thead>
+							<tr>											
+								<th>ID</th>
+								<th>Insumo</th>
+								<th>Cantidad</th>
+								<th>Precio C/U</th>
+								<th>Total</th>
+								<th>Acciones</th>																					
+							</tr>
+						</thead>
+						<!-- fin cabecera -->
+						<!-- Inicio row -->
+						<tr  scope="row" class="activo lavadoCompleto"  id="row1" data-id="1">										
+								<td>1</td>
+								<td name="formul">
+									<select id="insumo" placeholder="insumo" name="insumo" class="input" required="required" onclick="precio()">
+										<option>Seleccione Insumo</option>
+										<option value="Toalla">Toalla</option>
+										<option value="Jabon250">Jabon(250gr en Polvo)</option>
+										<option value="Esparadrapo">Esparadrapo</option>
+										<option value="Escoba">Escoba</option>
+										<option value="Cepillo">Cepillo</option>
+									</select>
+								</td>
+								
+								<td >
+									<select id="cantidad" placeholder="cantidad" name="cantidad" class="input" required="required" onclick="precio()">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</td>
+								<td id="precio">$ 0</td>
+								<td id="total">$ 0</td>
+								<td id="action">
+									<a onclick="createrow()" class="btn btn-default btn-xs" aria-label="Left Align">
+										<span class="glyphicon glyphicon-plus-sign color2" aria-hidden="true"></span>
+									</a>
+									<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+										<span class="glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+									</a>
+								</td>		
+						</tr>
+						<!-- fin row -->
+						
+					</table>
+					<button id="bsolicitar" class="btn fondo2 cblanco botonRoper" value="Solicitar">Solicitar</button>
+					</form>
+				</div>
+			</div>
+		<!-- fin div tabla -->
+	</main>
+	<!-- fin main content full -->
+</section>
+
+<script type="text/javascript">
+
+	function precio(){ 
+		var seleccion = $("#insumo").val();
+		var precio;
+		var cantidad =$("#cantidad").val();
+		switch (seleccion) {
+			case 'Toalla':
+			document.getElementById('precio').innerHTML = '$ 2000';
+			precio = 2000;
+			document.getElementById('total').innerHTML = "$ " + calvalores(precio, cantidad);
+                        break;
+                        case 'Jabon250':
+			document.getElementById('precio').innerHTML = '$ 1500';
+			precio = 1500;
+			document.getElementById('total').innerHTML = "$ " + calvalores(precio, cantidad);
+			break;
+			case 'Esparadrapo':
+			document.getElementById('precio').innerHTML = '$ 1500';
+			precio = 1500;
+			document.getElementById('total').innerHTML = "$ " + calvalores(precio, cantidad);
+			break;
+			case 'Escoba':
+			document.getElementById('precio').innerHTML = '$ 1500';
+			precio = 1500;
+			document.getElementById('total').innerHTML = "$ " + calvalores(precio, cantidad);
+			break;
+			case 'Cepillo':
+			document.getElementById('precio').innerHTML = '$ 1500';
+			precio = 1500;
+			document.getElementById('total').innerHTML = "$ " + calvalores(precio, cantidad);
+			break;
+		}
+	}
+
+	function createrow() {
+     
+    	var table = document.getElementById("myTable");
+        var row = table.insertRow(2);
+        var cell0 = row.insertCell(0);
+        var cell1 = row.insertCell(1);
+        var cell2 = row.insertCell(2);
+        var cell3 = row.insertCell(3);
+        var cell4 = row.insertCell(4);
+        var cell5 = row.insertCell(5);
+        
+        
+     
+    // CREO UN ELEMENTO DEL TIPO INPUT CON document.createElement("NOMBRE TAG HTML QUE QUIERO CREAR");
+     	var id = document.createElement("id");
+     	var tid = document.createTextNode("2"); 
+        id.appendChild(tid);   
+
+        var selecti = document.getElementById("insumo");
+        var optioni = selecti.cloneNode(true);
+
+        var selectc = document.getElementById("cantidad");
+        var optionc = selectc.cloneNode(true);
+        	optionc.setAttribute("id","cantidad2"); 
+
+
+        var precio = document.getElementById("precio");
+        var precioi = precio.cloneNode(true);
+        	precioi.setAttribute("id","precio2");
+        var preciop = precio.document.getElementById("precio")
+
+     	var tpr = document.createTextNode(preciop);
+     		precioi.appendChild(tpr);
+           
+           
+        var total = document.getElementById("total");
+        var totalc = total.cloneNode(true);
+        	totalc.setAttribute("id","total2");
+
+
+        var accciones = document.getElementById("action");
+        var action = accciones.cloneNode(true);
+
+        var total2 = cantidadf * preciop;
+        
+        cell0.appendChild(id);
+        cell1.appendChild(optioni);   
+        cell2.appendChild(optionc);
+        cell3.appendChild(precioi);   
+        cell4.appendChild(totalc);
+        cell5.appendChild(action);
+        // totalc.onclick();
+  		// var tto = document.createTextNode("$ 2000");
+		// totalc.appendChild(tto);
+        
+    // CON EL METODO appendChild(); LOS AGREGO A LA CELDA QUE QUIERO
+     	
+
+        var cantidadf =$("#cantidad2").val();
+        console.log("cantidad actual = "+cantidadf);
+        document.getElementById("total2").innerHTML = "$ "+ total2;
+     
+    }
+    
+    function calvalores(precio, cantidad){
+		var total = precio * cantidad;	
+                return total;
+	}
+
+</script>
+<!-- fin section principal -->

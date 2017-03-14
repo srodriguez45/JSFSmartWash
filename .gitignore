@@ -1,2 +1,7 @@
 /dist/
+<<<<<<< HEAD
 /build/
+=======
+/build/
+*.tmp
+>>>>>>> refs/remotes/origin/master

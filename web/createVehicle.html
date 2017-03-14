@@ -1,0 +1,149 @@
+<section id="principal">
+	
+	<!-- sidebar -->
+
+	<aside id="sidebar" class="fondogris col-md-4">
+		
+			<figure class="sidebaruser">
+				<div class="sidebaruser_icon user_icon opacidad2">
+					<a href="profile.html"><div class="sidebaruser_img" style="/*background-image:url(img/will.jpg);*/;"></div></a>
+				</div>
+				<figcaption><b>Autenticado como:</b><p>Administrador</p></figcaption>
+			</figure>
+
+			<div id="data">
+				<p><b>Nombre:</b> <span id="nombre">Steven Rodriguez</span></p>
+			</div>
+
+			<div id="data">
+				<p><b>Teléfono:</b> +571 314 281 62 06</p>
+			</div>
+
+			<div id="data">
+				<p><b>ubicación:</b> Bogotá - Colombia</p>
+			</div>
+
+			<div id="data">
+				<p><b>Email:</b> <a href="mailto:srodriguez45@misena.edu.co" class="color2h color1">srodriguez45@misena.edu.co</a></p>
+			</div>
+
+			<div id="data">
+				<a href="profile.html" id="button" class="fondo2 fondoh1 cblanco">Editar perfil</a>
+			</div>
+
+	</aside>
+
+	<!-- fin sidebar -->
+
+	<!-- content -->
+
+	<main id="content">
+
+			<!-- section 1 -->
+
+				<section id="bloque" class="fondogris">
+					<h1>Generar nuevo vehículo</h1>
+					<p>Desde aqui podrás agregar un nuevo vehículo, con su correspondiente cliente y contraseña</p>
+				</section>
+
+			<!-- fin section 1 -->
+
+			<!-- fin section 3 -->	
+
+			<section id="bloques">
+					
+					<section id="semibloque">
+						<h2 id="title">Datos del vehículo</h2>
+
+						<form class="formulario" action="index.html" novalidate="novalidate">
+								<div class="icon_form">
+									<label class="color1" for="ciudad" title="ciudad">Marca del vehículo <span class="cred">*</span></label>
+									<select name="ciudad" class="input" required="required">
+										<option value="chevrolet">Chevrolet</option>
+										<option value="honda">Honda</option>
+										<option value="hiundai">Hiundai</option>
+										<option value="kawasaki">Kawasaki</option>
+										<option value="pulsar">Pulsar</option>
+										<option value="renault">Renault</option>
+										<option value="toyota">Toyota</option>
+										<option value="yamaha">Yamaha</option>
+									</select>
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="ciudad" title="ciudad">Modelo <span class="cred">*</span></label>
+									<select name="ciudad" class="input" required="required">
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+										<option value="2014">2014</option>
+										<option value="2013">2013</option>
+										<option value="2012">2012</option>
+										<option value="2011">2011</option>
+										<option value="2010">2010</option>
+										<option value="2009">2009</option>
+										<option value="2008">2008</option>
+										<option value="2007">2007</option>
+										<option value="otros">Otros</option>
+									</select>
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="ciudad" title="ciudad">Tipo de vehículo <span class="cred">*</span></label>
+									<select name="ciudad" class="input" required="required">
+										<option value="Buses">Bus</option>
+										<option value="Camiones">Camión</option>
+										<option value="Camionetas">Camioneta</option>
+										<option value="Particulares">Particular</option>
+										<option value="Motocicletas">Motocicleta</option>
+									</select>
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="Placa" title="placa">Placa<span class="cred"> *</span></label>
+									<input id="Placa" type="placa" name="placa" class="input" placeholder="Placa" 
+										   required="required" pattern="[A-Z0-9]{6}" title="Agrega los 6 caracteres de la placa del vehículo (Mayúsculas)">
+								</div>
+
+								<div class="icon_form button">
+									<input type="submit" class="btn fondo2 cblanco fondoh1" value="Generar vehículo">
+								</div>
+
+						</form>
+
+
+					</section>	
+
+					<section id="minibloque" class="minibloque_especial">
+						<h2 id="title">Datos del cliente</h2>
+
+
+						<form id="formpass" class="formulario" action="index.html">
+								<div class="icon_form">
+									<label class="color1" for="ciudad" title="ciudad">Cliente <span class="cred">*</span></label>
+									<select name="ciudad" class="input" required="required">
+										<option>Seleccione el cliente</option>
+										<option value="4">Laura Rodriguez</option>
+										<option value="9">Nedid Pineda</option>
+										<option value="10">Salomon Arias</option>
+										<option value="11">Yeyssi Medina</option>
+										<option value="12">Albeiro Ramos</option>
+									</select>
+								</div>
+								<div class="icon_form">
+									<label class="color1" for="pass" title="Confirme Contraseña">Contraseña del vehículo</label>
+									<input id="pass" type="password" name="passconfirmation" class="input" placeholder="Agregue la contraseña si la requiere">
+								</div>	
+						</form>
+
+						<section class="fondogris">
+							
+						</section>
+					</section>	
+
+			</section>	
+
+			<!-- fin section 3 -->	
+
+		
+	</main>
+
+	<!-- fin content -->
+
+</section>

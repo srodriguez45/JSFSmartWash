@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todas las calificaciones - Smart Wash</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/paginators.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+	<meta name="name" content="content">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+
+<header id="header" class="fondogris">
+		
+		<figure class="logo">
+			<a href="index.html"><img src="img/logo.png" alt="Smart Wash Logo" class="logo_img"></a>
+		</figure>
+
+		<div class="top_bar">
+
+			<div class="exit_div">
+				| <a href="login.html" class="salir color2h"><i class="fa fa-sign-out exit"></i></a>
+			</div>
+
+			<figure class="userinfo">
+				<a href="profile.html" class="color2h">
+					<div class="userinfo_img user_icon opacidad2" style="/*background-image:url(img/will.jpg);*/"></div>
+					<figcaption>Administrador</figcaption>
+				</a>
+			</figure>
+		</div>
+
+		<nav id="principal_menu" class="fondo1 border2">
+		<li class="responsive_hide"><a href="#" class="navToggle cblanco"><i class="fa fa-bars"></i></a></li>
+
+			<ul>
+				<li><a href="#" class="fondo1 fondoh2 cblanco" title="Usuarios">Usuarios</a>
+					<ul class="submenu fondo1">
+						<h2 class="cblanco">Usuarios</h2>
+						<li><a href="listUsers.html" class="fondo1 fondoh2 cblanco" title="Todos los usuarios">Todos los usuarios</a></li>
+						<li><a href="customers.html" class="fondo1 fondoh2 cblanco" title="Todas los clientes">Todos los clientes</a></li>
+						<li><a href="listVehicles.html" class="fondo1 fondoh2 cblanco" title="Crear cita">Todos los vehículos</a></li>
+						<li><a href="createUser.html" class="fondo1 fondoh2 cblanco" title="Crear usuario">Crear usuario</a></li>
+						<li><a href="createVehicle.html" class="fondo1 fondoh2 cblanco" title="Crear cita">Crear vehículo</a></li>
+						<li><a href="profile.html" class="fondo1 fondoh2 cblanco" title="Tu perfil">Tu perfil</a></li>
+					</ul>
+				</li>				
+				<li><a href="#" class="fondo1 fondoh2 cblanco" title="Gestor de citas">Gestor de citas</a>
+					<ul class="submenu fondo1">
+						<h2 class="cblanco">Gestor de citas</h2>
+						<li><a href="listAppoinments.html" class="fondo1 fondoh2 cblanco" title="Todas las citas">Todas las citas</a></li>
+						<li><a href="createAppoinment.html" class="fondo1 fondoh2 cblanco" title="Crear cita">Crear cita</a></li>
+					</ul>
+				</li>
+				<li><a href="listServices.html" class="fondo1 fondoh2 cblanco" title="Insumos">Servicios</a></li>				
+				<li><a href="#" class="fondo1 fondoh2 cblanco" title="Insumos">Insumos</a>
+					<ul class="submenu fondo1">
+						<h2 class="cblanco">Gestor de insumos</h2>
+						<li><a href="listSupplieses.html" class="fondo1 fondoh2 cblanco" title="Todas las citas">Todas los insumos</a></li>
+						<li><a href="createSupplies.html" class="fondo1 fondoh2 cblanco" title="Crear cita">Crear insumo</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="fondo1 fondoh2 cblanco" title="Reportes">Pagos</a>
+					<ul class="submenu fondo1">
+						<h2 class="cblanco">Pagos</h2>
+						<li><a href="listPays.html" class="fondo1 fondoh2 cblanco" title="Todas las citas">Todos los pagos</a></li>
+						<li><a href="createPay.html" class="fondo1 fondoh2 cblanco" title="Crear cita">Adicionar pago</a></li>
+					</ul>
+				</li>
+				<li><a href="error404.html" class="fondo1 fondoh2 cblanco" title="Opciones generales">Reportes</a></li>				
+				<li><a href="#" class="fondo1 fondoh2 cblanco" title="Gestor de archivos">Gestor de archivos ADSI</a>
+					<ul class="submenu fondo1">
+						<h2 class="cblanco">Descargas / Errores</h2>
+						<li><a href="files.html" class="fondo1 fondoh2 cblanco" title="documentos">Listado maestro de documentos</a></li>
+						<li><a href="documents/comunicacion.zip" class="fondo1 fondoh2 cblanco" target="_blank" title="documentos">Componente de comunicación</a></li>
+						<li><a href="documents/plantilla.pdf" class="fondo1 fondoh2 cblanco" target="_blank" title="documentos">Ingeniería de software</a></li>
+						<li><a href="documents/imagenCorporativa.pdf" class="fondo1 fondoh2 cblanco" target="_blank" title="documentos">Diseño web</a></li>
+						<li><a href="documents/useCase.png" class="fondo1 fondoh2 cblanco" target="_blank" title="documentos">Inglés</a></li>
+						<li><a href="documents/SmartWashJava.rar" class="fondo1 fondoh2 cblanco" target="_blank" title="documentos">Algortimos</a></li>
+						<li><a href="documents/emprendimiento.rar" class="fondo1 fondoh2 cblanco" target="_blank" title="documentos">Emprendimiento</a></li>
+							<li><a href="error404.html" class="fondo1 fondoh2 cblanco" title="Errores">Error 404</a></li>
+						<li><a href="error500.html" class="fondo1 fondoh2 cblanco" title="Errores">Error 500</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</nav>
+
+</header><!-- /header -->
+
+<section id="principal" class="container-fluid-offset">
+	
+	<!-- content -->
+
+	<main class="container-fluid-offset">
+
+			<!-- section 1 -->
+
+				<section id="bloque" class="fondogris">
+					<h1>Todas las calificaciones</h1>
+					<p>Esta es la lista de calificaciones creadas actualmente en el sistema</p>
+				</section>
+
+			<!-- fin section 1 -->
+
+
+			<!-- section 2 -->
+
+				<section class="container-fluid sin_padding_side padding_top_down">
+
+					<div class="col-lg-2 col-xs-12 sidebar_list">
+
+						<div class="list-group appoinments_list">
+						  <a href="listCalifications.html" class="list-group-item active">Todas las calificaciones  <span class="badge">6</span></a>
+						  <a href="#" data-link="5" class="list-group-item">5 estrellas <span class="badge">3</span></a>
+						  <a href="#" data-link="4" class="list-group-item">4 estrellas <span class="badge">1</span></a>
+						  <a href="#" data-link="3" class="list-group-item">3 estrellas <span class="badge">2</span></a>
+						  <a href="#" data-link="2" class="list-group-item">2 estrellas <span class="badge">0</span></a>
+						  <a href="#" data-link="1" class="list-group-item">1 estrella <span class="badge">0</span></a>
+						</div>
+						
+					</div>
+
+					<div class="col-lg-10 col-xs-12 container_list">
+							
+							<div class="bx-table table-responsive">
+								<table class="table table-condensed">
+									<thead>
+										<tr>
+											<th><span class="input"><input class="check_all" type="checkbox" aria-label=""></span></th>
+											<th>Valor calificacion</th>
+											<th>Servicio</th>
+											<th>Operario calificado</th>
+											<th>Cliente</th>
+											<th>comentario</th>
+											<th>Acciones</th>
+										</tr>
+									</thead>
+									<tr scope="row" class="5" id="row1" data-id="1">
+										<td><span class="input"><input type="checkbox" aria-label=""></span></td>
+										<td>5</td>
+										<td>Lavado completo</td>
+										<td class="tipo">Pedro Ochoa</td>
+										<td>Laura Rodriguez</td>
+										<td>Lorem ipsum dolor sit amet...</td>
+										<td>
+											<a href="createAppoinment.html" class="btn btn-default btn-xs" aria-label="Left Align" data-name="Laura Rodriguez Rico" data-email="lrodriguez@hotmail.com" data-rol="3" aria-hidden="true">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" class="5" id="row1" data-id="5">
+										<td><span class="input"><input type="checkbox" aria-label=""></span></td>
+										<td>5</td>
+										<td>Lavado completo</td>
+										<td class="tipo">Pedro Ochoa</td>
+										<td>Laura Rodriguez</td>
+										<td>Lorem ipsum dolor sit amet...</td>
+										<td>
+											<a href="createAppoinment.html" class="btn btn-default btn-xs" aria-label="Left Align" data-name="Laura Rodriguez Rico" data-email="lrodriguez@hotmail.com" data-rol="3" aria-hidden="true">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" class="3" id="row1" data-id="3">
+										<td><span class="input"><input type="checkbox" aria-label=""></span></td>
+										<td>3</td>
+										<td>Lavado completo</td>
+										<td class="tipo">Pedro Ochoa</td>
+										<td>Sandra Feo</td>
+										<td>ipsum dolor sit amet...</td>
+										<td>
+											<a href="createAppoinment.html" class="btn btn-default btn-xs" aria-label="Left Align" data-name="Laura Rodriguez Rico" data-email="lrodriguez@hotmail.com" data-rol="3" aria-hidden="true">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" class="5" id="row1" data-id="5">
+										<td><span class="input"><input type="checkbox" aria-label=""></span></td>
+										<td>5</td>
+										<td>Lavado completo</td>
+										<td class="tipo">Zaida Patricia</td>
+										<td>Nedid Pineda</td>
+										<td>Ascret Rartas. psum dolor sit amet...</td>
+										<td>
+											<a href="createAppoinment.html" class="btn btn-default btn-xs" aria-label="Left Align" data-name="Laura Rodriguez Rico" data-email="npineda@misena.edu.co" data-rol="3" aria-hidden="true">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" class="4" id="row1" data-id="4">
+										<td><span class="input"><input type="checkbox" aria-label=""></span></td>
+										<td>4</td>
+										<td>Lavado completo</td>
+										<td class="tipo">Zaida Patricia</td>
+										<td>Salomón Diaz</td>
+										<td>Ascret Rartas. psum dolor sit amet...</td>
+										<td>
+											<a href="createAppoinment.html" class="btn btn-default btn-xs" aria-label="Left Align" data-name="Laura Rodriguez Rico" data-email="npineda@misena.edu.co" data-rol="3" aria-hidden="true">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>
+									<tr scope="row" class="3" id="row1" data-id="3">
+										<td><span class="input"><input type="checkbox" aria-label=""></span></td>
+										<td>3</td>
+										<td>Lavado completo</td>
+										<td class="tipo">Angélica Triana</td>
+										<td>Yeissy Medina</td>
+										<td>Lorerm ipsu uspsum dolor sit amet...</td>
+										<td>
+											<a href="createAppoinment.html" class="btn btn-default btn-xs" aria-label="Left Align" data-name="Laura Rodriguez Rico" data-email="lrodriguez@hotmail.com" data-rol="3" aria-hidden="true">
+											  <span class="glyphicon glyphicon glyphicon-edit text-primary" aria-hidden="true"></span>
+											</a>
+											<a class="btn btn-default btn-xs remove-item" aria-label="Left Align" data-toggle="modal" data-target="#delete">
+											  <span class="glyphicon glyphicon glyphicon glyphicon-remove-circle text-danger" aria-hidden="true"></span>
+											</a>
+										</td>
+									</tr>									
+								</table>
+
+							</div>
+
+					</div>
+						
+				</section>
+
+			<!-- fin section 2 -->	
+
+			
+
+		
+	</main>
+
+	<!-- fin content -->
+
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Confirmar acción</h4>
+      </div>
+      <div class="modal-body">
+        <p>Esta a punto de eliminar una cita, para continuar haga clic en <b>Eliminar cita</b>, de lo contrario finalice con <b>cancelar</b></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary delete-button" data-dismiss="modal">Eliminar cita</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer id="footer" class="fondo1 cblanco">
+	<div class="wrap">
+		<p>
+			Copyright 2016 Todos los derechos reservados SMART WASH<br>
+			Desarrollado por: 
+			<a href="mailto:srodriguez45@misena.edu.co" class="cblanco">Steven Rodriguez</a> | 
+			<a href="mailto:miguel@misena.edu.co" class="cblanco">Miguel Bermudez</a> | 
+			<a href="mailto:hovalle@misena.edu.co" class="cblanco">Hernando Ovalle</a> | 
+		</p>
+	</div>
+</footer>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+
+<script>
+	if (typeof localStorage.name == 'undefined') {
+		location.href= 'login.html';
+	}
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+/*
+	Author: GAES 4 Smart Wash;
+	version: 1.0;
+	title: Smart Wash formularios;
+	copyright: Smart Wash 2016 all rights reserved;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
+ */
+
+
+.formularios { width: 100%; box-sizing: border-box; }
+
+.icon_form { margin: 0 0 5px; width: 100%; display: inline-block; vertical-align: top; position: relative; }
+
+.icon_form:nth-child(2n+1) { margin-right: 1%;  }
+
+label { display: block; width: 100%; padding: 8px 0; }
+
+input, select { width: 100%; display: block; box-sizing: border-box; padding: 10px 5px; border: 1px solid #eee; }
+
+/*formulario y contraseñas*/
+
+#formpass div { width:100%;  }
+
